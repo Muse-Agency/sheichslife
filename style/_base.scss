@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prata", serif;
+    z-index: 2;
+    position: relative;
+}
+section {
+    margin-bottom: 90px;
+    position: relative;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+}

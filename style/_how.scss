@@ -1,0 +1,155 @@
+.how {
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+    input {
+        display: none;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        background: url("../img/how-back.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &__inner {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        display: flex;
+        max-width: 1450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 145px;
+        gap: 100px;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 464px;
+        border: 1px solid #ffffff;
+        padding: 30px;
+        margin-top: 130px;
+    }
+
+    &__content-box {
+        display: none;
+    }
+
+    &__content-title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 45px;
+    }
+
+    &__content-list {
+        display: flex;
+        &-pic {
+            position: absolute;
+            right: 148px;
+        }
+        ul {
+            margin-left: auto;
+            width: 148px;
+            list-style-type: none;
+            li {
+                font-size: 15px;
+                line-height: 20px;
+                color: #ffffff;
+                padding-left: 40px;
+                padding-bottom: 5px;
+                border-bottom: 1px dashed #f9d59b;
+                margin-bottom: 25px;
+                &:last-child {
+                    border: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__content-list-pic {
+    }
+
+    &__content-subtitle {
+    }
+
+    &__content-grid {
+    }
+
+    &__content-grid-item {
+    }
+
+    &__body {
+    }
+
+    &__body-inner {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        color: #ffffff;
+        margin-right: 15px;
+    }
+
+    &__num {
+        color: #f9d59b;
+        position: static;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 27px;
+        color: #f9d59b;
+        max-width: 586px;
+        margin-bottom: 75px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 70px;
+        max-width: 580px;
+        list-style-type: none;
+        &-item {
+            display: block;
+            label {
+                cursor: pointer;
+                font-size: 15px;
+                line-height: 20px;
+                color: #ffffff;
+                padding: 10px 5px 10px 20px;
+                display: block;
+                border: 2px solid transparent;
+                border-left: 2px solid #ffffff;
+                height: 100%;
+            }
+        }
+    }
+}
+#how0:checked ~ .how__inner .box-0,
+#how1:checked ~ .how__inner .box-1,
+#how2:checked ~ .how__inner .box-2 {
+    display: block;
+}
+#how0:checked ~ .how__inner #how-label-0,
+#how1:checked ~ .how__inner #how-label-1,
+#how2:checked ~ .how__inner #how-label-2 {
+    border: 2px solid #f9d59b;
+    color: #f9d59b;
+}
+.box-0 {
+}
+.box-1 {
+}
+.box-2 {
+}
+.num {
+}

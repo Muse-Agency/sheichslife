@@ -1,0 +1,108 @@
+.program {
+    width: 100%;
+    overflow: hidden;
+    &__inner {
+        max-width: 1220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 617px;
+        margin-right: 72px;
+    }
+
+    &__num {
+        color: #e7e3db;
+        position: static;
+        margin-right: auto;
+    }
+
+    &__slider-actions {
+        width: 100px;
+        height: 185px;
+        display: flex;
+        align-items: flex-end;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            background: none;
+            height: 22px;
+            svg {
+                width: 9.2px;
+                height: 12.8px;
+            }
+        }
+    }
+
+    &__slider-nums {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    &__slider {
+        margin-top: 130px;
+        .swiper-slide {
+            max-width: 318px;
+            position: relative;
+            &::before {
+                content: "";
+                border: 1px solid #000000;
+                width: 100%;
+                height: 230px;
+                display: block;
+                position: absolute;
+                top: 88px;
+                left: 0;
+            }
+            &__pic {
+                width: 283px;
+                height: 264px;
+                display: block;
+                margin: auto;
+                margin-bottom: 25px;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+            p {
+                margin: auto;
+                max-width: 250px;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: #000000;
+                background: #fff;
+                position: relative;
+            }
+            button {
+                background: #e7e3db;
+                border-radius: 3px;
+                font-size: 13px;
+                line-height: 18px;
+                color: #000000;
+                text-align: center;
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                border: none;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
