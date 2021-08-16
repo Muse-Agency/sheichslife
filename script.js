@@ -33,3 +33,15 @@ const programSlider = new Swiper(".js-program-slider", {
         prevEl: ".program__slider-prev",
     },
 })
+
+// Video
+
+const videoSlider = new Swiper(".js-video-slider", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    pagination: {
+        el: ".video__slider-pagination",
+        type: "bullets",
+        clickable: true
+    }
+})
