@@ -687,16 +687,16 @@
         </section>
 
         <section class="testimonials">
-            <div class="testimonials__tab-one">
+            <div class="testimonials__tabs">
+                <button active class="testimonials__btn-tab active" data-tab="#tab_1">Кейсы</button>
+                <button class="testimonials__btn-tab" data-tab="#tab_2">Отзывы</button>
+            </div>
+            <div class="testimonials__tab active" data-tab-content="1" id="tab_1">
                 <div class="container">
                     <div class="testimonials__num num">
                         08
                     </div>
                     <div class="wrapper">
-                        <div class="testimonials__tabs">
-                            <a active class="testimonials__link">Кейсы</a>
-                            <a class="testimonials__link">Отзывы</a>
-                        </div>
                         <h2 class="testimonials__title">
                             Кейсы
                         </h2>
@@ -715,16 +715,13 @@
                     </div>
                 </div>
             </div>
-            <div class="testimonials__tab-two">
+            <div class="testimonials__tab" data-tab-content="2" id="tab_2">
                 <div class="container">
                     <div class="testimonials__num num">
                         08
                     </div>
                     <div class="wrapper">
-                        <div class="testimonials__tabs">
-                            <a active class="testimonials__link">Кейсы</a>
-                            <a class="testimonials__link">Отзывы</a>
-                        </div>
+                        
                         <h2 class="testimonials__title">
                             Отзывы
                         </h2>

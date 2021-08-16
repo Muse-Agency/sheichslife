@@ -45,3 +45,52 @@ const videoSlider = new Swiper(".js-video-slider", {
         clickable: true
     }
 })
+
+const changeTab = () =>{
+    const tabNavs = document.querySelectorAll('.testimonials__btn-tab');
+    const tabPanes = document.querySelectorAll('.testimonials__tab');
+    console.log(tabPanes);
+
+    tabNavs.forEach(function(item){
+        item.addEventListener('click', function(){
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute('data-tab');
+            let currentTab = document.querySelector(tabId);
+
+            if(! currentBtn.classList.contains('active')){
+                tabNavs.forEach(function(item){
+                    item.classList.remove('active');
+    
+                })
+    
+                tabPanes.forEach(function(item){
+                    item.classList.remove('active');
+                })
+    
+                currentBtn.classList.add('active');
+                currentTab.classList.add('active');
+            }
+        })
+    })
+
+    // for (let i = 0; i < tabNavs.length; i++){
+
+    //     tabNavs[i].addEventListener('click', function(e){
+    //         e.preventDefault();
+    //         const activeTabAttr = e.target.getAttribute('data-tab');
+            
+    //         for (const j = 0; j < tabNavs.length; j++){
+    //             const contentAttr = tabPanes[j].getAttribute('data-tab-content');
+
+    //             if (activeTabAttr === contentAttr){
+    //                 tabNavs[j].classList.add("active");
+    //                 tabPanes[j].classList.add("active");
+    //             } else{
+    //                 tabNavs[j].classList.remove("active");
+    //                 tabPanes[j].classList.remove("active");
+    //             }
+    //         }
+    //     })
+    // }
+}
+changeTab();

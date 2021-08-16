@@ -27,10 +27,46 @@
 
     &__tabs{
         margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
     }
-    &__link{
+    &__tab{
+        display: none;
+    }
+    &__tab.active{
+        display: block;
+    }
+    &__btn-tab{
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
         &:first-child{
             margin-right: 50px;
+        }
+    }
+
+    &__btn-tab.active{
+        position: relative;
+        &:last-child{
+            &::before{
+                position: absolute;
+                content: '';
+                width: 88px;
+                height: 6px;
+                background-color: #E7E3DB;
+                bottom: -2px;
+                left: 0px;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 82px;
+            height: 6px;
+            background-color: #E7E3DB;
+            bottom: -2px;
+            left: -8px;
         }
     }
     &__title{
