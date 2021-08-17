@@ -1,3 +1,14 @@
+// Menu
+const menuBtnToggle = document.querySelectorAll(".js-menu-toggle")
+const menu = document.querySelector(".menu")
+const page = document.querySelector('.page')
+
+menuBtnToggle.forEach(btn => {
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("menu-on")
+        page.classList.toggle("page-off")
+    })
+})
 // Intro
 
 const introBackgroundSlider = new Swiper(".js-intro-background-slider", {
@@ -46,27 +57,27 @@ const videoSlider = new Swiper(".js-video-slider", {
     }
 })
 
-const changeTab = () =>{
+const changeTab = () => {
     const tabNavs = document.querySelectorAll('.testimonials__btn-tab');
     const tabPanes = document.querySelectorAll('.testimonials__tab');
     console.log(tabPanes);
 
-    tabNavs.forEach(function(item){
-        item.addEventListener('click', function(){
+    tabNavs.forEach(function (item) {
+        item.addEventListener('click', function () {
             let currentBtn = item;
             let tabId = currentBtn.getAttribute('data-tab');
             let currentTab = document.querySelector(tabId);
 
-            if(! currentBtn.classList.contains('active')){
-                tabNavs.forEach(function(item){
+            if (!currentBtn.classList.contains('active')) {
+                tabNavs.forEach(function (item) {
                     item.classList.remove('active');
-    
+
                 })
-    
-                tabPanes.forEach(function(item){
+
+                tabPanes.forEach(function (item) {
                     item.classList.remove('active');
                 })
-    
+
                 currentBtn.classList.add('active');
                 currentTab.classList.add('active');
             }

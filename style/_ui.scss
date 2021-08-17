@@ -1,4 +1,8 @@
 .page {
+    &-off {
+        overflow: hidden;
+        height: 100px;
+    }
     &__frame {
         position: fixed;
         width: calc(100% - 20px);
@@ -15,9 +19,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            pointer-events: all;
             a {
                 &:last-child {
                     margin-top: 10px;
+                }
+                &:hover {
+                    svg {
+                        fill: #a49d8f;
+                    }
                 }
             }
         }
@@ -40,7 +50,10 @@
                     margin-left: 15px;
                 }
                 &:hover {
-                    opacity: 0.5;
+                    color: #a49d8f;
+                    svg {
+                        fill: #a49d8f;
+                    }
                 }
             }
         }
@@ -62,13 +75,10 @@
         position: relative;
         pointer-events: auto;
         &:hover {
-            opacity: 0.5;
-        }
-        span {
-            font-size: 47px;
-            line-height: 57px;
-            color: #000000;
-            transform: rotate(-45deg);
+            color: #a49d8f;
+            span span {
+                background: #a49d8f;
+            }
         }
     }
 
