@@ -29,7 +29,7 @@ const introBottomSlider = new Swiper(".js-intro-bottom-slider", {
         delay: 5000
     },
     breakpoints:{
-        320:{
+        0:{
             enabled: false,
             direction: "vertical",
             loop: false,
@@ -45,7 +45,7 @@ const introBottomSlider = new Swiper(".js-intro-bottom-slider", {
 // Program
 
 const programSlider = new Swiper(".js-program-slider", {
-    spaceBetween: 104,
+    
     slidesPerView: 3,
     pagination: {
         el: ".program__slider-nums",
@@ -55,6 +55,16 @@ const programSlider = new Swiper(".js-program-slider", {
         nextEl: ".program__slider-next",
         prevEl: ".program__slider-prev",
     },
+    breakpoints:{
+        320:{
+            spaceBetween: 0,
+            enabled: false,
+        },
+        1220:{
+            spaceBetween: 104,
+            enabled: true,
+        }
+    }
 })
 
 // Video
