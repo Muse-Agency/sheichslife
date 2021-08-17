@@ -15,7 +15,8 @@
         "_owners.scss",
         "_lead.scss",
         "_instruction.scss",
-        "_testimonials.scss"
+        "_testimonials.scss",
+        "_dignity.scss"
     ],
     "names": [],
     "file": "style.css"
