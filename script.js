@@ -20,13 +20,25 @@ const introBackgroundSlider = new Swiper(".js-intro-background-slider", {
 });
 
 const introBottomSlider = new Swiper(".js-intro-bottom-slider", {
-    loop: true,
+    
     pagination: {
         el: '.js-intro-bottom-slider .swiper-pagination',
         type: 'bullets',
     },
     autoplay: {
         delay: 5000
+    },
+    breakpoints:{
+        320:{
+            enabled: false,
+            direction: "vertical",
+            loop: false,
+        },
+        1024:{
+            enabled: true,
+            direction: "horizontal",
+            loop: true,
+        }
     }
 })
 
@@ -56,6 +68,7 @@ const videoSlider = new Swiper(".js-video-slider", {
         clickable: true
     }
 })
+// Tabs
 
 const changeTab = () => {
     const tabNavs = document.querySelectorAll('.testimonials__btn-tab');
