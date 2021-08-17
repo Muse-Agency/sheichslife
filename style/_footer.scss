@@ -1,0 +1,159 @@
+.footer{
+    a{
+        text-decoration: none;
+        color: #000000;
+        cursor: pointer;
+
+    }
+    background-color: #FFFFFF;
+    padding: 63px 0 45px 0;
+    
+    .container{
+        padding: 0 20px;
+        @media screen and (min-width: 537px) {
+            padding: 0 63px 0 49px;
+        }
+
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1140px) {
+            align-items: flex-start;
+        }
+        @media screen and (min-width: 1140px) {
+            justify-content: space-evenly;
+        }
+    }
+    &__logo-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            position: relative;
+            top: -14px;
+        }
+    }
+
+    &__logo-img{
+        margin-bottom: 11px;
+    }
+
+    &__inscription{
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        max-width: 146px;
+        width: 100%;
+    }
+
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1140px) {
+            flex-direction: row;
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        @media screen and (min-width: 768px) {
+            align-items: flex-end;
+        }
+        @media screen and (min-width: 1140px) {
+            margin-right: 60px;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 121px;
+        }
+        &__row{
+            display: flex;
+            align-items: center;
+
+            &:first-child{
+                margin-bottom: 14px;
+            }
+        }
+        &__phone-description{
+            line-height: 20px;
+            color: #848484;
+            margin-right: 15px;
+            font-size: 12px;
+            @media screen and (min-width: 537px) {
+                font-size: 15px;
+            }
+        }
+        &__phone{
+            line-height: 27px;
+            font-size: 13px;
+            @media screen and (min-width: 537px) {
+                font-size: 20px;
+            }
+        }
+
+        &__office-phone-text, &__messengers{
+            color: #848484;
+            line-height: 24px;
+            margin-right: 10px;
+            font-size: 13px;
+            @media screen and (min-width: 537px) {
+                font-size: 15px;
+            }
+        }
+
+        &__office-phone,&__phone-messengers{
+            font-size: 13px;
+            line-height: 24px;
+            @media screen and (min-width: 537px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .adresses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            align-items: flex-end;
+        }
+
+        &__email{
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 21px;
+            display: block;
+        }
+
+        &__adress-box{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        &__adress{
+            font-size: 15px;
+            line-height: 20px;
+            font-style: normal;
+        }
+
+        &__user-agreement{
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: underline;
+        }
+    }
+}
