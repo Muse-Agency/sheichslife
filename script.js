@@ -67,6 +67,18 @@ const programSlider = new Swiper(".js-program-slider", {
     }
 })
 
+//How
+const swiperHow = new Swiper(".swiper-how", {
+    pagination: {
+    el: ".swiper-pagination-how",
+    type: "fraction",
+    },
+    navigation: {
+    nextEl: ".swiper-button-next-how",
+    prevEl: ".swiper-button-prev-how",
+    },
+});
+
 // Video
 
 const videoSlider = new Swiper(".js-video-slider", {
