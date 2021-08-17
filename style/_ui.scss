@@ -8,12 +8,47 @@
         top: 10px;
         pointer-events: none;
         z-index: 10;
+        &-social {
+            position: absolute;
+            right: 35px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &-link {
+            &-top {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-weight: normal;
+                font-size: 9px;
+                line-height: 11px;
+                text-transform: uppercase;
+                color: #000000;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                transform: rotate(-90deg) translate(-60px, 0);
+                pointer-events: all;
+                svg {
+                    margin-left: 15px;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
     }
 
     &__frame-btn {
         transform: rotate(-90deg) translate(-65px, -10px);
         font-family: "Montserrat", serif;
-        display: flex;
         font-weight: normal;
         font-size: 9px;
         line-height: 11px;
@@ -28,6 +63,12 @@
         pointer-events: auto;
         &:hover {
             opacity: 0.5;
+        }
+        span {
+            font-size: 47px;
+            line-height: 57px;
+            color: #000000;
+            transform: rotate(-45deg);
         }
     }
 
