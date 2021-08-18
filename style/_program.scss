@@ -25,9 +25,9 @@
     }
 
     &__title {
-        max-width: 617px;
+        max-width: 660px;
         font-size: 30px;
-        line-height: 35px;
+        line-height: 45px;
         text-align: center;
         
         @media screen and (min-width: 680px){
@@ -107,32 +107,52 @@
             align-items: center;
             position: relative;
             margin-bottom: 50px;
-            @media screen and (min-width: 1220px) {
-                max-width: 318px;
+            width: 200px!important;
+            max-width: 400px!important;
+            @media screen and (min-width: 992px) {
+                width: 100%!important;
+                margin-bottom: 0;
+                // max-width: none!important;
+
             }
+
+
             &::before {
                 content: "";
                 border: 1px solid #000000;
-                min-width: 230px;
-                width: 100%;
-                height: 230px;
+                // min-width: 230px;
+                width: 300px;
+                height: 208px;
                 display: block;
                 position: absolute;
-                top: 30px;
-                left: 0;
-                display: none;
+                top: 20px;
+                left: -50px;
+                // display: none;
+                
 
+                @media screen and (min-width:480px) {
+                    top: 30px;
+                left: -90px;
+                width: 380px;
+                height: 230px;
+                }
                 @media screen and (min-width:820px) {
-                    display: block;
-                    max-width: none;
+                    // display: block;
+                    max-width: none!important;
                 }
                 @media screen and (min-width: 992px) {
-                    max-width: none;
                     top: 120px;
+                    // width: 100%!important;
+                    min-width: 230px;
+                    left: 10px;
+                    
+
                 }
                 @media screen and (min-width: 1220px) {
                     max-width: none;
                     top: 88px;
+                    width: 318px;
+                    left: 40px;
                 }
             }
             &__pic {

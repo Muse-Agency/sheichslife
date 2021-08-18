@@ -26,7 +26,7 @@
     }
     
     .swiper-how{
-        padding-top: 20px;
+        padding-top: 60px;
         .swiper-slide{
             display: flex;
             justify-content: center;
@@ -34,6 +34,9 @@
         .swiper-wrapper{
             height: 100%;
             padding-bottom: 20px;
+        }
+        .how__content-box-swiper,.how__content-box-grid-swiper{
+            padding-bottom: 30px;
         }
         .how__content-title-swiper{
             color: #FFFFFF;
@@ -133,6 +136,11 @@
                 width: 570px;
                 height: 340px;
             }
+        }
+        .how__content-grid-subtitle-swiper,.how__content-grid-title-swiper{
+            text-align: left;
+            color: #FFFFFF;
+            width: 100%;
         }
         .how__content-subtitle-swiper{
             color: #FFFFFF;

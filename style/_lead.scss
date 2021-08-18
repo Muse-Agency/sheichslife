@@ -5,6 +5,7 @@
     background-size: cover;
     justify-content: center;
     padding: 75px 0;
+    margin-bottom: 0;
 
     &__num {
         color: #f9d59b;
@@ -54,7 +55,7 @@
         margin-bottom: 25px;
         text-align: center;
         font-size: 30px;
-        line-height: 35px;
+        line-height: 45px;
 
         @media screen and (min-width: 1024px) {
             text-align: left;

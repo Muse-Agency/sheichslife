@@ -45,8 +45,7 @@ const introBottomSlider = new Swiper(".js-intro-bottom-slider", {
 // Program
 
 const programSlider = new Swiper(".js-program-slider", {
-    
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     pagination: {
         el: ".program__slider-nums",
         type: "fraction",
@@ -61,14 +60,15 @@ const programSlider = new Swiper(".js-program-slider", {
             enabled: false,
         },
         1220:{
-            spaceBetween: 104,
+            spaceBetween: 80,
             enabled: true,
         }
     }
 })
 
-//How
+// How
 const swiperHow = new Swiper(".swiper-how", {
+    autoHeight: true,
     pagination: {
     el: ".swiper-pagination-how",
     type: "fraction",

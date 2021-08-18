@@ -31,18 +31,24 @@
 
     &__title{
         text-align: center;
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
         @media screen and (min-width: 1070px) {
         text-align: left;
+        margin-bottom: 0;
         }
     }
 
     &__subtitle {
-        font-size: 20px;
-        line-height: 38px;
+        font-size: 16px;
+        line-height: 28px;
         color: #000000;
         text-align: center;
         @media screen and (min-width: 1070px) {
         text-align: left;
+        font-size: 20px;
+        line-height: 38px;
         }
     }
 
@@ -53,7 +59,7 @@
         align-items: center;
         margin-bottom: 50px;
         border: 2px solid #e7e3db;
-        padding-top: 15px;
+        padding: 40px;
 
         @media screen and (min-width: 800px) {
             flex-direction: row;
