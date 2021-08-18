@@ -16,6 +16,12 @@ section {
   position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+  section {
+    margin-bottom: 50px;
+  }
+}
+
 h2 {
   font-style: normal;
   font-weight: normal;
@@ -36,7 +42,6 @@ h2 {
 
 .page-off {
   overflow: hidden;
-  height: 100px;
 }
 
 .page__frame {
@@ -630,7 +635,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -703,6 +708,7 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 3;
 }
 
 .intro__photo-slider .swiper-slide img {
@@ -718,12 +724,12 @@ h2 {
   max-width: 1440px;
   position: absolute;
   left: 10px;
-  top: 30px;
+  top: 70px;
 }
 
 @media screen and (min-width: 768px) {
   .intro__inner {
-    top: 5%;
+    top: 10%;
   }
 }
 
@@ -757,7 +763,7 @@ h2 {
   font-weight: lighter;
   position: relative;
   font-size: 30px;
-  line-height: 27px;
+  line-height: 32px;
   margin-bottom: 39px;
   color: #ffffff;
   max-width: 230px;
@@ -1294,6 +1300,9 @@ h2 {
 
 .how__mobile-section {
   display: block;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1320,12 +1329,13 @@ h2 {
   padding-bottom: 20px;
 }
 
-.how .swiper-how .how__content-box-swiper, .how .swiper-how .how__content-box-grid-swiper {
+.how .swiper-how .how__content-box-swiper,
+.how .swiper-how .how__content-box-grid-swiper {
   padding-bottom: 30px;
 }
 
 .how .swiper-how .how__content-title-swiper {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 40px;
   padding-left: 20px;
   text-align: left;
@@ -1365,7 +1375,7 @@ h2 {
 }
 
 .how .swiper-how .how__list-item {
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 6px;
   padding-left: 20px;
   border-bottom: 1px dashed #f9d59b;
@@ -1396,7 +1406,7 @@ h2 {
 }
 
 .how .swiper-how .swiper-pagination-how.swiper-pagination-fraction {
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1405,11 +1415,13 @@ h2 {
           justify-content: center;
 }
 
-.how .swiper-how .swiper-pagination-how.swiper-pagination-fraction span, .how .swiper-how .swiper-pagination-how.swiper-pagination-fraction .swiper-pagination-current {
-  color: #FFFFFF;
+.how .swiper-how .swiper-pagination-how.swiper-pagination-fraction span,
+.how .swiper-how .swiper-pagination-how.swiper-pagination-fraction .swiper-pagination-current {
+  color: #ffffff;
 }
 
-.how .swiper-how .swiper-button-next-how, .how .swiper-how .swiper-button-prev-how {
+.how .swiper-how .swiper-button-next-how,
+.how .swiper-how .swiper-button-prev-how {
   width: 12px;
   height: 20px;
   bottom: 16px;
@@ -1481,14 +1493,25 @@ h2 {
   }
 }
 
-.how .swiper-how .how__content-grid-subtitle-swiper, .how .swiper-how .how__content-grid-title-swiper {
+.how .swiper-how .how__content-grid-title-swiper {
+  margin-bottom: 10px;
+}
+
+.how .swiper-how .how__content-grid-subtitle-swiper {
+  font-size: 14px;
+}
+
+.how .swiper-how .how__content-grid-subtitle-swiper,
+.how .swiper-how .how__content-grid-title-swiper {
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .how .swiper-how .how__content-subtitle-swiper {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .how .swiper-how .how__content-grid-item-swiper {
@@ -1570,22 +1593,16 @@ h2 {
 }
 
 .how__inner {
-  padding-top: 150px;
-  padding-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 1290px;
   margin-left: auto;
   margin-right: auto;
   display: none;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 @media screen and (min-width: 992px) {
@@ -1602,6 +1619,16 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .how__inner {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
@@ -1978,6 +2005,14 @@ h2 {
   margin-top: 160px;
 }
 
+@media screen and (max-width: 1000px) {
+  .owners {
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .owners__num {
   color: #e7e3db;
   right: -100px;
@@ -2121,6 +2156,7 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -2142,13 +2178,14 @@ h2 {
   text-align: center;
   max-width: 400px;
   width: 100%;
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 600px) {
   .owners__block-text {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 40px;
   }
 }
 
@@ -2288,10 +2325,9 @@ h2 {
 }
 
 .instruction {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   padding-top: 60px;
-  margin-bottom: 0 !important;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2301,7 +2337,7 @@ h2 {
 }
 
 .instruction .container {
-  padding: 0 60px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 982px) {
@@ -2315,7 +2351,7 @@ h2 {
   position: absolute;
   top: 110px;
   right: 113px;
-  color: #E7E3DB;
+  color: #e7e3db;
 }
 
 @media screen and (min-width: 806px) {
@@ -2367,7 +2403,7 @@ h2 {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   row-gap: 70px;
-  margin-bottom: 108px;
+  margin-bottom: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2378,6 +2414,7 @@ h2 {
   .instruction__inner {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
   }
 }
 
@@ -2419,7 +2456,7 @@ h2 {
   -webkit-transform: translateX(-50%) rotate(90deg);
       -ms-transform: translateX(-50%) rotate(90deg);
           transform: translateX(-50%) rotate(90deg);
-  content: '';
+  content: "";
   width: 16px;
   height: 16px;
   background-image: url(../img/instruction/arrows.svg);
@@ -2575,7 +2612,7 @@ h2 {
   border: none;
   border-radius: 5px;
   background: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2595,13 +2632,12 @@ h2 {
 }
 
 .testimonials {
-  padding-top: 157px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
 }
 
 .testimonials .container {
-  padding: 60px;
+  padding: 0 20px;
 }
 
 .testimonials__num {
@@ -2609,7 +2645,7 @@ h2 {
   position: absolute;
   left: 66px;
   top: 48px;
-  color: #E7E3DB;
+  color: #e7e3db;
   width: 216px;
 }
 
@@ -2667,32 +2703,33 @@ h2 {
 
 .testimonials__btn-tab.active:last-child::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 88px;
   height: 6px;
-  background-color: #E7E3DB;
+  background-color: #e7e3db;
   bottom: -2px;
   left: -1px;
 }
 
 .testimonials__btn-tab.active::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 82px;
   height: 6px;
-  background-color: #E7E3DB;
+  background-color: #e7e3db;
   bottom: -2px;
   left: -8px;
 }
 
 .testimonials__title {
-  margin-bottom: 59px;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 45px;
 }
 
 @media screen and (min-width: 1024px) {
   .testimonials__title {
+    margin-bottom: 60px;
     font-size: 48px;
     text-align: left;
   }
@@ -2764,7 +2801,7 @@ h2 {
 }
 
 .testimonials__box:first-child {
-  border-bottom: 3px solid #E7E3DB;
+  border-bottom: 3px solid #e7e3db;
   padding-bottom: 40px;
 }
 
@@ -2772,7 +2809,7 @@ h2 {
   .testimonials__box:first-child {
     padding-bottom: 0;
     padding-right: 112px;
-    border-right: 3px solid #E7E3DB;
+    border-right: 3px solid #e7e3db;
     border-bottom: none;
   }
 }
@@ -2799,7 +2836,7 @@ h2 {
 
 .testimonials__btn::before {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url(../img/testimonials/btn_pseudo.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2873,11 +2910,11 @@ h2 {
 }
 
 .testimonials__text-name::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 35px;
   height: 3px;
-  background-color: #E7E3DB;
+  background-color: #e7e3db;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);

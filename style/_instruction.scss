@@ -1,15 +1,14 @@
 .instruction {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: relative;
     padding-top: 60px;
-    margin-bottom: 0 !important;
 
     @media screen and (min-width: 1280px) {
         padding-top: 108px;
     }
 
     .container {
-        padding: 0 60px;
+        padding: 0 20px;
 
         @media screen and (min-width: 982px) {
             padding: 0 112px 0 114px;
@@ -21,7 +20,7 @@
         position: absolute;
         top: 110px;
         right: 113px;
-        color: #E7E3DB;
+        color: #e7e3db;
 
         @media screen and (min-width: 806px) {
             display: block;
@@ -58,12 +57,13 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 70px;
-        margin-bottom: 108px;
+        margin-bottom: 50px;
         justify-content: center;
         width: 100%;
 
         @media screen and (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 100px;
         }
 
         @media screen and (min-width: 982px) {
@@ -89,7 +89,7 @@
             top: 110px;
             left: 50%;
             transform: translateX(-50%) rotate(90deg);
-            content: '';
+            content: "";
             width: 16px;
             height: 16px;
             background-image: url(../img/instruction/arrows.svg);
@@ -143,12 +143,12 @@
             &::after {
                 top: 130px;
                 left: 50%;
-            transform: translateX(-50%) rotate(90deg);
-            @media screen and (min-width: 768px) {
-                top: 12px;
-                left: 92px;
-                transform: rotate(0deg);
-            }
+                transform: translateX(-50%) rotate(90deg);
+                @media screen and (min-width: 768px) {
+                    top: 12px;
+                    left: 92px;
+                    transform: rotate(0deg);
+                }
                 @media screen and (min-width: 1440px) {
                     top: 12px;
                     left: 130px;
@@ -187,9 +187,6 @@
                 width: 100%;
             }
         }
-
-
-
     }
 
     &__img-box {
@@ -218,7 +215,7 @@
         border: none;
         border-radius: 5px;
         background: #000000;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 13px;
         display: flex;
         align-items: center;
@@ -230,5 +227,4 @@
     &__icon {
         margin-right: 15px;
     }
-
 }

@@ -1,12 +1,12 @@
 // Menu
 const menuBtnToggle = document.querySelectorAll(".js-menu-toggle")
 const menu = document.querySelector(".menu")
-const page = document.querySelector('.page')
+const body = document.querySelector('body')
 
 menuBtnToggle.forEach(btn => {
     btn.addEventListener("click", () => {
         menu.classList.toggle("menu-on")
-        page.classList.toggle("page-off")
+        body.classList.toggle("page-off")
     })
 })
 // Intro
