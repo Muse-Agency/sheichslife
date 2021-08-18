@@ -19,4 +19,11 @@ h2 {
     font-size: 48px;
     line-height: 65px;
     color: #000000;
+    @media screen and (max-width: 1024px) {
+        font-size: 30px;
+        line-height: 45px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
 }

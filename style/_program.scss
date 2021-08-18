@@ -1,6 +1,10 @@
 .program {
     width: 100%;
     overflow: hidden;
+    @media screen and (max-width: 1250px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     &__inner {
         max-width: 1220px;
         margin-left: auto;
@@ -15,6 +19,9 @@
     &__title {
         max-width: 617px;
         margin-right: 72px;
+        @media screen and (max-width: 1024px) {
+            margin-right: 0;
+        }
     }
 
     &__num {
@@ -28,6 +35,9 @@
         height: 135px;
         display: flex;
         align-items: flex-end;
+        @media screen and (max-width: 1250px) {
+            display: none;
+        }
         button {
             display: flex;
             align-items: center;
@@ -52,9 +62,27 @@
 
     &__slider {
         margin-top: 130px;
+        @media screen and (max-width: 1250px) {
+            margin-top: 80px;
+        }
+        .swiper-wrapper {
+            @media screen and (max-width: 1250px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 40px;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (max-width: 850px) {
+                grid-template-columns: 1fr;
+                width: 260px;
+            }
+        }
         .swiper-slide {
             max-width: 318px;
             position: relative;
+
             &::before {
                 content: "";
                 border: 1px solid #000000;
@@ -66,8 +94,10 @@
                 left: 0;
             }
             &__pic {
-                width: 283px;
-                height: 264px;
+                width: 90%;
+                max-width: 283px;
+                height: auto;
+                max-height: 264px;
                 display: block;
                 margin: auto;
                 margin-bottom: 25px;
@@ -102,6 +132,9 @@
                 border: none;
                 margin-top: 30px;
                 cursor: pointer;
+            }
+            @media screen and (max-width: 850px) {
+                width: 100% !important;
             }
         }
     }
