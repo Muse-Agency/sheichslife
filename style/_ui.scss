@@ -7,7 +7,6 @@
         position: fixed;
         width: calc(100% - 20px);
         height: calc(100% - 20px);
-        border: 1px solid #000000;
         left: 10px;
         top: 10px;
         pointer-events: none;
@@ -19,7 +18,6 @@
             position: absolute;
             right: 35px;
             bottom: 20px;
-            display: flex;
             flex-direction: column;
             align-items: center;
             pointer-events: all;
@@ -71,7 +69,7 @@
     }
 
     &__frame-btn {
-        transform: rotate(-90deg) translate(-65px, -10px);
+        transform: rotate(-90deg) translate(-14px, -10px);
         font-family: "Montserrat", serif;
         font-weight: normal;
         font-size: 9px;

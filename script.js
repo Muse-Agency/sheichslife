@@ -89,6 +89,7 @@ const videoSlider = new Swiper(".js-video-slider", {
         clickable: true
     }
 })
+// Tabs
 
 const changeTab = () => {
     const tabNavs = document.querySelectorAll('.testimonials__btn-tab');
