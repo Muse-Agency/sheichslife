@@ -236,7 +236,7 @@
     }
 
     &__bottom-link {
-        background: #e7e3db;
+        background-color: #e7e3db;
         border-radius: 5px;
         font-weight: normal;
         font-size: 7px;
@@ -249,6 +249,17 @@
         padding: 0 10px;
         height: 54px;
         margin-top: 13px;
+        transition: all 0.3s ease;
+        img {
+            transition: filter 0.3s ease;
+        }
+        &:hover {
+            background-color: #a39d90;
+            color: #ffffff;
+            img {
+                filter: invert(1);
+            }
+        }
 
         @media screen and (min-width: 800px) {
             font-size: 10px;
@@ -277,6 +288,8 @@
             justify-content: center;
             position: relative;
             top: -50px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
 
             @media screen and (min-width: 768px) {
                 top: 0;
@@ -298,7 +311,8 @@
             top: -78px;
             max-width: 230px;
             width: 100%;
-
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
             @media screen and (min-width: 500px) {
                 justify-content: flex-start;
                 max-width: 300px;

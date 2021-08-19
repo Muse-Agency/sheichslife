@@ -10,7 +10,7 @@
         left: 0;
         top: 0;
         display: block;
-        background: url("../img/how-back.svg") no-repeat;
+        background: url("../img/dignity/background.jpeg") no-repeat;
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -29,7 +29,7 @@
     }
 
     .swiper-how {
-        padding-top: 60px;
+        padding-top: 40px;
         .swiper-slide {
             display: flex;
             justify-content: center;
@@ -47,6 +47,7 @@
             margin-bottom: 40px;
             padding-left: 20px;
             text-align: left;
+            font-size: 22px;
             @media screen and (min-width: 500px) {
                 padding-left: 0;
             }
@@ -143,6 +144,7 @@
         }
         .how__content-grid-title-swiper {
             margin-bottom: 10px;
+            font-size: 22px;
         }
         .how__content-grid-subtitle-swiper {
             font-size: 14px;
@@ -380,6 +382,11 @@
         color: #ffffff;
         margin-right: 15px;
         max-width: 510px;
+        @media screen and (max-width: 992px) {
+            text-align: center;
+            margin: auto;
+            padding-top: 30px;
+        }
     }
 
     &__num {
@@ -393,6 +400,11 @@
         color: #f9d59b;
         max-width: 586px;
         margin-bottom: 75px;
+        @media screen and (max-width: 992px) {
+            text-align: center;
+            margin: auto;
+            padding-top: 30px;
+        }
     }
     &__list {
         display: grid;

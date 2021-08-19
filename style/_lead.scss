@@ -1,10 +1,9 @@
 .lead {
     display: flex;
     max-height: 1000px;
-    background: url("../img/how-back.svg") no-repeat;
+    background: url("../img/dignity/background.jpeg") no-repeat;
     background-size: cover;
     justify-content: center;
-    padding: 75px 0;
     margin-bottom: 0;
 
     &__num {
@@ -38,14 +37,15 @@
     }
 
     &__content {
-        padding: 0 30px;
-    //     background: url("../img/how-back.svg") no-repeat;
-    // background-size: auto 100%;
+        padding: 30px 20px;
+        //     background: url("../img/how-back.svg") no-repeat;
+        // background-size: auto 100%;
         @media screen and (min-width: 1024px) {
             width: 60%;
             padding-left: 145px;
             padding-bottom: 130px;
             padding-right: 0;
+            padding-top: 75px;
         }
     }
 
@@ -88,8 +88,6 @@
             max-width: 356px;
             min-height: 505px;
             border: none;
-
-            
         }
 
         @media screen and (min-width: 1220px) {
@@ -103,6 +101,5 @@
                 height: 625px;
             }
         }
-        
     }
 }

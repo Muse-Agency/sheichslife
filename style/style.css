@@ -96,6 +96,7 @@ h2 {
   right: 0;
   top: 0;
   font-weight: normal;
+  font-family: "Montserrat", serif;
   font-size: 9px;
   line-height: 11px;
   text-transform: uppercase;
@@ -138,7 +139,6 @@ h2 {
   -webkit-transform: rotate(-90deg) translate(-14px, -10px);
       -ms-transform: rotate(-90deg) translate(-14px, -10px);
           transform: rotate(-90deg) translate(-14px, -10px);
-  font-family: "Montserrat", serif;
   font-weight: normal;
   font-size: 9px;
   line-height: 11px;
@@ -175,6 +175,7 @@ h2 {
 
 .page__incsription {
   display: none;
+  font-family: "Montserrat", serif;
 }
 
 @media screen and (min-width: 1024px) {
@@ -888,7 +889,7 @@ h2 {
 }
 
 .intro__bottom-link {
-  background: #e7e3db;
+  background-color: #e7e3db;
   border-radius: 5px;
   font-weight: normal;
   font-size: 7px;
@@ -905,6 +906,27 @@ h2 {
   padding: 0 10px;
   height: 54px;
   margin-top: 13px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.intro__bottom-link img {
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.intro__bottom-link:hover {
+  background-color: #a39d90;
+  color: #ffffff;
+}
+
+.intro__bottom-link:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 @media screen and (min-width: 800px) {
@@ -946,6 +968,8 @@ h2 {
           justify-content: center;
   position: relative;
   top: -50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -978,6 +1002,8 @@ h2 {
   top: -78px;
   max-width: 230px;
   width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -1255,7 +1281,7 @@ h2 {
 }
 
 .program__slider .swiper-slide button {
-  background: #e7e3db;
+  background-color: #e7e3db;
   border-radius: 3px;
   font-size: 13px;
   line-height: 18px;
@@ -1267,6 +1293,14 @@ h2 {
   border: none;
   margin-top: 30px;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.program__slider .swiper-slide button:hover {
+  background-color: #a39d90;
+  color: #fff;
 }
 
 @media screen and (max-width: 850px) {
@@ -1290,7 +1324,7 @@ h2 {
   left: 0;
   top: 0;
   display: block;
-  background: url("../img/how-back.svg") no-repeat;
+  background: url("../img/dignity/background.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1312,7 +1346,7 @@ h2 {
 }
 
 .how .swiper-how {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .how .swiper-how .swiper-slide {
@@ -1339,6 +1373,7 @@ h2 {
   margin-bottom: 40px;
   padding-left: 20px;
   text-align: left;
+  font-size: 22px;
 }
 
 @media screen and (min-width: 500px) {
@@ -1495,6 +1530,7 @@ h2 {
 
 .how .swiper-how .how__content-grid-title-swiper {
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .how .swiper-how .how__content-grid-subtitle-swiper {
@@ -1813,6 +1849,14 @@ h2 {
   max-width: 510px;
 }
 
+@media screen and (max-width: 992px) {
+  .how__title {
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+}
+
 .how__num {
   color: #f9d59b;
   position: static;
@@ -1824,6 +1868,14 @@ h2 {
   color: #f9d59b;
   max-width: 586px;
   margin-bottom: 75px;
+}
+
+@media screen and (max-width: 992px) {
+  .how__subtitle {
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
 }
 
 .how__list {
@@ -1970,11 +2022,14 @@ h2 {
   text-transform: uppercase;
   color: #000000;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .video__btn::before, .video__btn::after {
   content: "";
-  width: 109px;
+  width: 89px;
   height: 2px;
   background: #000000;
   position: absolute;
@@ -1996,6 +2051,21 @@ h2 {
 .video__btn svg {
   margin-right: 15px;
   margin-top: -1.5px;
+}
+
+.video__btn svg path {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video__btn:hover {
+  background-color: #a39d90;
+  color: #ffffff;
+}
+
+.video__btn:hover svg path {
+  fill: #ffffff;
 }
 
 .owners {
@@ -2205,12 +2275,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   max-height: 1000px;
-  background: url("../img/how-back.svg") no-repeat;
+  background: url("../img/dignity/background.jpeg") no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 75px 0;
   margin-bottom: 0;
 }
 
@@ -2251,7 +2320,7 @@ h2 {
 }
 
 .lead__content {
-  padding: 0 30px;
+  padding: 30px 20px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -2260,6 +2329,7 @@ h2 {
     padding-left: 145px;
     padding-bottom: 130px;
     padding-right: 0;
+    padding-top: 75px;
   }
 }
 
@@ -2611,7 +2681,7 @@ h2 {
   width: 100%;
   border: none;
   border-radius: 5px;
-  background: #000000;
+  background-color: #000000;
   color: #ffffff;
   font-size: 13px;
   display: -webkit-box;
@@ -2625,6 +2695,25 @@ h2 {
           justify-content: center;
   cursor: pointer;
   padding: 0 30px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.instruction__btn img {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.instruction__btn:hover {
+  background-color: #e7e3db;
+  color: #000;
+}
+
+.instruction__btn:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .instruction__icon {
@@ -2950,7 +3039,7 @@ h2 {
 }
 
 .dignity__num {
-  color: #F9D59B;
+  color: #f9d59b;
   position: absolute;
   top: 80px;
   right: 42px;
@@ -2970,7 +3059,7 @@ h2 {
 }
 
 .dignity__title {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 50px;
   text-align: center;
   font-size: 30px;
@@ -3050,24 +3139,29 @@ h2 {
   .dignity__box {
     margin-bottom: 0;
   }
-  .dignity__box:first-child {
-    max-width: 184px;
+  .dignity__box:first-child .dignity__img-box img {
+    max-width: 75px;
+    max-height: 75px;
     width: 100%;
   }
-  .dignity__box:nth-child(2) {
-    max-width: 179px;
+  .dignity__box:nth-child(2) .dignity__img-box img {
+    max-width: 85px;
+    max-height: 85px;
     width: 100%;
   }
-  .dignity__box:nth-child(3) {
-    max-width: 221px;
+  .dignity__box:nth-child(3) .dignity__img-box img {
+    max-width: 100px;
+    max-height: 100px;
     width: 100%;
   }
-  .dignity__box:nth-child(4) {
-    max-width: 186px;
+  .dignity__box:nth-child(4) .dignity__img-box img {
+    max-width: 85px;
+    max-height: 85px;
     width: 100%;
   }
-  .dignity__box:last-child {
-    max-width: 188px;
+  .dignity__box:last-child .dignity__img-box img {
+    max-width: 75px;
+    max-height: 75px;
     width: 100%;
   }
 }
@@ -3094,12 +3188,12 @@ h2 {
 }
 
 .dignity__img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .dignity__text {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 18px;
   line-height: 26px;

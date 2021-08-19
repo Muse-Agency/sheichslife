@@ -9,6 +9,15 @@ menuBtnToggle.forEach(btn => {
         body.classList.toggle("page-off")
     })
 })
+
+// Menu Links
+
+const menuLinks = document.querySelectorAll(".menu__list-item a")
+
+menuLinks.forEach(link => link.addEventListener("click", () => {
+    menu.classList.toggle("menu-on")
+    body.classList.toggle("page-off")
+}))
 // Intro
 
 const introBackgroundSlider = new Swiper(".js-intro-background-slider", {

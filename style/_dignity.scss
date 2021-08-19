@@ -1,49 +1,45 @@
-.dignity{
+.dignity {
     background-image: url(../img/dignity/background.jpeg);
     background-size: cover;
-    padding: 112px 0 ;
+    padding: 112px 0;
     position: relative;
     margin-bottom: 0;
 
-    .container{
+    .container {
         padding: 0 50px;
-        @media screen and (min-width: 1300px){
+        @media screen and (min-width: 1300px) {
             padding: 0 138px 0 121px;
         }
     }
-    &__num{
-        color: #F9D59B;
+    &__num {
+        color: #f9d59b;
         position: absolute;
         top: 80px;
         right: 42px;
         display: none;
-        @media screen and (min-width: 780px){
+        @media screen and (min-width: 780px) {
             display: block;
         }
-        @media screen and (min-width: 1150px){
+        @media screen and (min-width: 1150px) {
             top: -70px;
         }
-
     }
-    &__title{
-        color: #FFFFFF;
+    &__title {
+        color: #ffffff;
         margin-bottom: 50px;
         text-align: center;
         font-size: 30px;
         line-height: 45px;
         @media screen and (min-width: 568px) {
             margin-bottom: 117px;
-            
         }
         @media screen and (min-width: 1150px) {
             text-align: left;
             margin-bottom: 117px;
             font-size: 48px;
-
         }
-
     }
-    &__wrapper{
+    &__wrapper {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -56,53 +52,73 @@
             justify-content: center;
         }
     }
-    &__box{
+    &__box {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 400px;
         width: 100%;
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 50px;
         }
 
         @media screen and (min-width: 1150px) {
             margin-bottom: 0;
-
-
-            &:first-child{
-                max-width: 184px;
-                width: 100%;
+            &:first-child {
+                .dignity__img-box {
+                    img {
+                        max-width: 75px;
+                        max-height: 75px;
+                        width: 100%;
+                    }
+                }
             }
-            &:nth-child(2){
-                max-width: 179px;
-                width: 100%;
+            &:nth-child(2) {
+                .dignity__img-box {
+                    img {
+                        max-width: 85px;
+                        max-height: 85px;
+                        width: 100%;
+                    }
+                }
             }
-            &:nth-child(3){
-                max-width: 221px;
-                width: 100%;
+            &:nth-child(3) {
+                .dignity__img-box {
+                    img {
+                        max-width: 100px;
+                        max-height: 100px;
+                        width: 100%;
+                    }
+                }
             }
-            &:nth-child(4){
-                max-width: 186px;
-                width: 100%;
+            &:nth-child(4) {
+                .dignity__img-box {
+                    img {
+                        max-width: 85px;
+                        max-height: 85px;
+                        width: 100%;
+                    }
+                }
             }
-            &:last-child{
-                max-width: 188px;
-                width: 100%;
+            &:last-child {
+                .dignity__img-box {
+                    img {
+                        max-width: 75px;
+                        max-height: 75px;
+                        width: 100%;
+                    }
+                }
             }
-
         }
 
         @media screen and (min-width: 1600px) {
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: 60px;
             }
         }
-        
-        
     }
 
-    &__img-box{
+    &__img-box {
         width: 117.5px;
         height: 111.25px;
         margin-bottom: 23px;
@@ -111,13 +127,13 @@
         align-items: center;
     }
 
-    &__img{
-        width: 100px;
-        height: 100px;
+    &__img {
+        width: 100%;
+        height: 100%;
     }
 
-    &__text{
-        color: #FFFFFF;
+    &__text {
+        color: #ffffff;
         text-align: center;
         font-size: 18px;
         line-height: 26px;
@@ -125,6 +141,5 @@
             font-size: 15px;
             line-height: 20px;
         }
-        
     }
 }

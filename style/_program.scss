@@ -120,7 +120,7 @@
                 position: relative;
             }
             button {
-                background: #e7e3db;
+                background-color: #e7e3db;
                 border-radius: 3px;
                 font-size: 13px;
                 line-height: 18px;
@@ -132,6 +132,11 @@
                 border: none;
                 margin-top: 30px;
                 cursor: pointer;
+                transition: background-color 0.3s ease;
+                &:hover {
+                    background-color: #a39d90;
+                    color: #fff;
+                }
             }
             @media screen and (max-width: 850px) {
                 width: 100% !important;

@@ -41,6 +41,7 @@
                 right: 0;
                 top: 0;
                 font-weight: normal;
+                font-family: "Montserrat", serif;
                 font-size: 9px;
                 line-height: 11px;
                 text-transform: uppercase;
@@ -69,7 +70,6 @@
 
     &__frame-btn {
         transform: rotate(-90deg) translate(-14px, -10px);
-        font-family: "Montserrat", serif;
         font-weight: normal;
         font-size: 9px;
         line-height: 11px;
@@ -95,6 +95,7 @@
     }
     &__incsription {
         display: none;
+        font-family: "Montserrat", serif;
         @media screen and (min-width: 1024px) {
             display: block;
         }
